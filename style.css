@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") no-repeat center;
+    background-size: cover;
+}
+
+/* Glass Container */
+.container {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 60%;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ecc71;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Logout */
+.logout {
+    float: right;
+    background: orange;
+}
+
+/* List */
+ul {
+    list-style: none;
+}
+
+li {
+    background: rgba(255,255,255,0.2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}

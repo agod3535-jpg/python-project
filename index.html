@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📚 Digital Library</h1>
+
+    <!-- LOGIN -->
+    <div id="loginPage" class="card">
+        <h2>Login</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have account? <span onclick="showSignup()">Signup</span></p>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signupPage" class="card hidden">
+        <h2>Signup</h2>
+        <input id="newUser" placeholder="Username">
+        <input id="newPass" type="password" placeholder="Password">
+        <button onclick="signup()">Signup</button>
+        <p onclick="showLogin()">Back to Login</p>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="hidden">
+
+        <button onclick="logout()" class="logout">Logout</button>
+
+        <div class="card">
+            <h2>Add Book</h2>
+            <input id="bookId" placeholder="Book ID">
+            <input id="title" placeholder="Title">
+            <input id="author" placeholder="Author">
+            <button onclick="addBook()">ADD</button>
+        </div>
+
+        <div class="card">
+            <h2>Book List</h2>
+            <ul id="bookList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
